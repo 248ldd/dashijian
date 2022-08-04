@@ -5,7 +5,7 @@ const getUserInfo = () => {
     data: null,
     success: (res) => {
       const { stutas, message } = res;
-      if (stutas !== 0) return layer.msg(message);
+      // if (stutas !== 0) return layer.msg(message);
       renderAvater(res.data);
     },
   });
